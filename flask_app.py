@@ -143,6 +143,6 @@ def cliente():
     return render_template('cliente.html')
 
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
-#
+# Não usar em ambiente de produção
+if __name__ == '__main__':
+    app.run(debug=True)
