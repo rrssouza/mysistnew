@@ -11,6 +11,7 @@ from config import Config
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config.from_object(Config)
 
@@ -142,5 +143,6 @@ def cliente():
     return render_template('cliente.html')
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
+#
