@@ -1,0 +1,213 @@
+<!-- templates/despesas.html -->
+{% extends 'base.html' %} <!--herda o template base.html-->
+
+{% block title %}Página 2{% endblock %}
+
+{% block content %}
+<form method="POST" class="mb-4"> <!-- tag form com metodo post-->
+    {{ form.hidden_tag() }}
+    
+    <div class="row">
+        <div class="form-group">
+            {{ form.categoria_id.label(class="form-label") }} 
+            {{ form.categoria_id(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.escolagrazi.label(class="form-label") }} 
+            {{ form.escolagrazi(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.escolafelipe.label(class="form-label") }}
+            {{ form.escolafelipe(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.escolakaique.label(class="form-label") }} 
+            {{ form.escolakaique(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.contaagua.label(class="form-label") }} 
+            {{ form.contaagua(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.contaluz.label(class="form-label") }} 
+            {{ form.contaluz(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.contatelefone.label(class="form-label") }} 
+            {{ form.contatelefone(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.tv.label(class="form-label") }} 
+            {{ form.tv(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.internet.label(class="form-label") }} 
+            {{ form.internet(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.condominio.label(class="form-label") }} 
+            {{ form.condominio(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+
+
+        <div class="form-group">
+            {{ form.mercado.label(class="form-label") }} 
+            {{ form.mercado(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.cartaocredito.label(class="form-label") }} 
+            {{ form.cartaocredito(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.roupas.label(class="form-label") }} 
+            {{ form.roupas(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.passeio.label(class="form-label") }} 
+            {{ form.passeio(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.farmacia.label(class="form-label") }} 
+            {{ form.farmacia(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.estacionamento.label(class="form-label") }} 
+            {{ form.estacionamento(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.materialescolar.label(class="form-label") }} 
+            {{ form.materialescolar(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.ipva.label(class="form-label") }} 
+            {{ form.ipva(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.dpvat.label(class="form-label") }} 
+            {{ form.dpvat(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.licenciamento.label(class="form-label") }} 
+            {{ form.licenciamento(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+
+
+        <div class="form-group">
+            {{ form.iptu.label(class="form-label") }} 
+            {{ form.iptu(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.consorcio.label(class="form-label") }} 
+            {{ form.consorcio(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.viagem.label(class="form-label") }} 
+            {{ form.viagem(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.gastoextra.label(class="form-label") }} 
+            {{ form.gastoextra(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.seguro.label(class="form-label") }} 
+            {{ form.seguro(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.cursoingles.label(class="form-label") }} 
+            {{ form.cursoingles(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.dentiste.label(class="form-label") }} 
+            {{ form.dentiste(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.restauramntefast.label(class="form-label") }} 
+            {{ form.restauramntefast(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.cabeleireiro.label(class="form-label") }} 
+            {{ form.cabeleireiro(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.cursokumon.label(class="form-label") }} 
+            {{ form.cursokumon(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+
+
+        <div class="form-group">
+            {{ form.aluguel.label(class="form-label") }} 
+            {{ form.aluguel(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.prestacaocasa.label(class="form-label") }} 
+            {{ form.prestacaocasa(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.prestacaocarro.label(class="form-label") }} 
+            {{ form.prestacaocarro(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.contagas.label(class="form-label") }} 
+            {{ form.contagas(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.irpf.label(class="form-label") }} 
+            {{ form.irpf(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.emprestimobb.label(class="form-label") }} 
+            {{ form.emprestimobb(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.lavagemcarro.label(class="form-label") }} 
+            {{ form.lavagemcarro(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.combustivel.label(class="form-label") }} 
+            {{ form.combustivel(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.manutencaocarro.label(class="form-label") }} 
+            {{ form.manutencaocarro(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.bilheteunico.label(class="form-label") }} 
+            {{ form.bilheteunico(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+
+
+        <div class="form-group">
+            {{ form.encargosjuros.label(class="form-label") }} 
+            {{ form.encargosjuros(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.consultamedica.label(class="form-label") }} 
+            {{ form.consultamedica(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.jogosgame.label(class="form-label") }} 
+            {{ form.jogosgame(class="form-control", placeholder = "Digite aqui") }}
+        </div>
+        <div class="form-group">
+            {{ form.despesasatualizada_em.label(class="form-label") }} 
+            {{ form.despesasatualizada_em(class="form-control") }}
+        </div>
+    </div><br>
+    
+    <div class="row">
+        <h2>Depesas Registradas</h2>
+        <ul class="list-group">
+            {% for despesas in despesas %} <!--loop for-->
+                <li class="list-group-item">{{ despesas.despesasatualizadas_em }} - {{ despesas.escolagrazi }} - {{ despesas.escolafelipe }} - {{ despesas.escolakaique }} - {{ despesas.contaagua }} - {{ despesas.contaluz}} - {{ despesas.contatelefone }} - {{ despesas.tv }} - {{ despesas.internet }} - {{ despesas.condominio }} - {{ despesas.mercado }} - {{ despesas.cartaocredito }} - {{ despesas.roupas }} - {{ despesas.passeio }} - {{ despesas.farmacia }} - {{ despesas.estacionamento }} - {{ despesas.materialescolar }} - {{ despesas.ipva }} - {{ despesas.dpvat }} - {{ despesas.licenciamento }} - {{ despesas.iptu }} - {{ despesas.consorcio }} - {{ despesas.viagem }} - {{ despesas.gastoextra }} - {{ despesas.seguro }} - {{ despesas.cursoingles }} - {{ despesas.dentiste }} - {{ despesas.restauramntefast }} - {{ despesas.cabeleireiro }} - {{ despesas.cursokumon }} - {{ despesas.aluguel }} - {{ despesas.prestacaocasa }} - {{ despesas.prestacaocarro }} - {{ despesas.contagas }} - {{ despesas.irpf }} - {{ despesas.emprestimobb }} - {{ despesas.lavagemcarro }} - {{ despesas.combustivel }} - {{ despesas.manutencaocarro }} - {{ despesas.bilheteunico }} - {{ despesas.encargosjuros }} - {{despesas.consultamedica}} - {{despesas.jogosgame}}</li>
+            {% endfor %}
+        </ul><br>
+        
+    </div>
+
+    <div class="row">
+        <div>
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </div>
+</form>
+{% endblock %}

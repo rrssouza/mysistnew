@@ -1,0 +1,54 @@
+/* static/styles.css */
+#contendados{
+    border-radius: 0.3em;
+}
+
+#footer{
+    grid-area: footer;
+    border-radius: 0.2em;
+}
+
+.form-control{
+    font-size: 16px;
+}
+.form-label{
+    font-size: 18px;
+}
+.form-group {
+    width: 200px;
+}
+.list-group{
+    width: 1000px;
+}
+
+.container-fluid{
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(14, 97, 165, 0.866);
+    padding-top: 15px;
+}
+
+.card-body-sucess{
+    background-color: rgb(86, 90, 93);
+}
+
+.card-header{
+    background-color: rgb(240, 248, 6);
+}
+
+.card-body{
+    background-color: rgb(181, 193, 193);
+} 
+
+.bola {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin: 0 5px; 
+}
+.bola-verde { background-color: green; }
+.bola-amarela { background-color: yellow; }
+.bola-vermelha { background-color: red; }
